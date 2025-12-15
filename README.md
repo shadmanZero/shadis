@@ -41,26 +41,27 @@ make run
 
 ## Testing
 
-You can connect with `telnet` for now:
+Connect with telnet:
 
 ```bash
 telnet localhost 6379
 ```
 
-Then, manually type Redis commands using the RESP protocol format. For example:
+Then type RESP commands. Example for PING:
 
 ```
 *1
 $4
 PING
 ```
-You should see:
+
+Response:
 
 ```
 +PONG
 ```
 
-Similarly, you can set and get values:
+Example for SET and GET:
 
 ```
 *3
@@ -70,7 +71,13 @@ $4
 name
 $7
 shadman
+```
 
+```
++OK
+```
+
+```
 *2
 $3
 GET
@@ -78,18 +85,15 @@ $4
 name
 ```
 
-You should see:
-
 ```
-+OK
 $7
 shadman
 ```
 
-Tips:
-- Each line must end with Enter.
-- See [the RESP protocol docs](https://redis.io/docs/reference/protocol-spec/) for more info.
-```
+**Tips:**
+
+- Each line must end with Enter
+- See [RESP protocol docs](https://redis.io/docs/reference/protocol-spec/) for more info
 
 ## Project Structure
 
@@ -110,4 +114,3 @@ Tips:
 ---
 
 *This is a learning project. If you need a real Redis, use [Redis](https://redis.io).*
-
