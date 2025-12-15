@@ -1,0 +1,57 @@
+# Binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build output
+/shadis
+*.out
+
+# Test binary
+*.test
+
+# Go workspace
+go.work
+go.work.sum
+
+# Coverage
+*.coverprofile
+coverage.out
+coverage.html
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Debug
+debug
+__debug_bin*
+
